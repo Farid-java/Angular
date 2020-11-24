@@ -13,6 +13,10 @@ import { EmailComponent } from './components/email/email.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { EmailbanckendService } from './service/emailbanckend.service';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { HttpClientModule } from '@angular/common/http';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -30,10 +34,13 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    MatProgressSpinnerModule
 
   ],
-  providers: [],
+  providers: [EmailbanckendService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
