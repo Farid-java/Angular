@@ -1,3 +1,9 @@
+This is UI for Email Send made in Angular Whos API made in Spring Boot Repository with branch name API_Email.
+
+
+
+
+
 # Emailgui
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
